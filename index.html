@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MMA Zubehör Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('mma-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+.btn {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.btn:hover {
+  background-color: #c0392b;
+}
+
+/* Products Section */
+.products {
+  padding: 50px 0;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product h3 {
+  margin-top: 15px;
+}
+
+.product p {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* About Section */
+.about {
+  padding: 50px 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 50px;
+}
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1>MMA Gear Shop</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Produkte</a></li>
+          <li><a href="#about">Über uns</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Hochwertiges MMA Zubehör</h2>
+      <p>Entdecke unser Sortiment an erstklassigem MMA-Zubehör und Ausrüstung.</p>
+      <a href="#products" class="btn">Jetzt Shoppen</a>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <div class="container">
+      <h2>Unsere Produkte</h2>
+      <div class="grid-container">
+        <div class="product">
+          <img src="mma-handschuhe.jpg" alt="MMA Handschuhe">
+          <h3>MMA Handschuhe</h3>
+          <p>Preis: €49,99</p>
+        </div>
+        <div class="product">
+          <img src="mma-schoner.jpg" alt="Schienbeinschoner">
+          <h3>Schienbeinschoner</h3>
+          <p>Preis: €34,99</p>
+        </div>
+        <div class="product">
+          <img src="mma-short.jpg" alt="MMA Shorts">
+          <h3>MMA Shorts</h3>
+          <p>Preis: €29,99</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>Über Uns</h2>
+      <p>Wir sind ein führender Anbieter von MMA-Zubehör und Ausrüstung. Unsere Produkte werden von professionellen Kämpfern und Trainern verwendet.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Kontakt</h2>
+      <p>Haben Sie Fragen? Kontaktieren Sie uns unter:</p>
+      <p>Email: info@mma-gear-shop.de</p>
+      <p>Telefon: 01234 567890</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 MMA Gear Shop. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+</body>
+</html>
